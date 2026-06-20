@@ -1,0 +1,16 @@
+{
+  "secret": "your-github-webhook-secret",
+  "port": 9000,
+  "repos": {
+    "your-username/your-repo": {
+      "path": "/prod/your-repo",
+      "branch": "main"
+    },
+    "your-username/repo-with-subdir-compose": {
+      "path": "/prod/repo-with-subdir-compose",
+      "branch": "main",
+      "compose_dir": "subdir",
+      "compose_file": "docker-compose.production.yml"
+    }
+  }
+}

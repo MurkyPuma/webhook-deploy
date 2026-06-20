@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+
+# Your real config holds the webhook secret and the list of deployed repos.
+# Keep it local; copy config.example.json to config.json and fill it in.
+config.json

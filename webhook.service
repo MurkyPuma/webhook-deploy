@@ -1,0 +1,14 @@
+[Unit]
+Description=GitHub Webhook Deploy Server
+After=network.target
+
+[Service]
+Type=simple
+User=youruser
+WorkingDirectory=/prod/webhook-deploy
+ExecStart=/usr/bin/python3 /prod/webhook-deploy/webhook.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
